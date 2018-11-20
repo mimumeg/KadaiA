@@ -48,7 +48,6 @@ for even_number in even_numbers:
     print(result)
 print()
 
-
 # A-8: リストを要素に持つリスト
 # users_info を使って次のような出力をしてください
 
@@ -95,3 +94,26 @@ dice()
 # 身長(m)と体重(kg)を入力として受け取りBMIを計算するアプリを実装してください
 # 参考となるWebアプリ https://keisan.casio.jp/exec/system/1161228732​
 # 小数点第2位まで表示すること
+print(f"-----A-11:-----")
+
+
+def bmi_calculator():
+    height = float(input("身長を入力して下さい。(cm): "))  # 小数点に対応するfloat
+    weight = float(input("体重を入力して下さい。(Kg): "))  # 小数点に対応するfloat
+
+    # 身長・体重は小数点第2位表示なので再定義
+    height = round(height, 2)
+    weight = round(weight, 2)
+
+    print(f'あなたの身長は{height}cm, 体重は{weight}Kgです')
+
+    height = height * 0.01  # センチメートルからメートル変換
+
+    bmi = weight / (height * height)
+
+    # BMIは小数点第2位表示なので再定義
+    bmi = round(bmi, 2)
+    print(f"BMIは{bmi}です")
+
+
+bmi_calculator()
