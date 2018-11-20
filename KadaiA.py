@@ -6,8 +6,9 @@ users = ["Bob", "Tom", "Ken"]
 
 # A-2: 整数のリスト
 # 1から5までの整数を要素として持つint_numbersリストを定義してください
-int_numbers = [1, 2, 3, 4, 5]
-# print(int_numbers)
+# int_numbers = [1, 2, 3, 4, 5]
+int_number = list(range(1, 6))
+print(int_number)
 
 # A-3: 要素のデータ型が異なるリスト
 # "Kazuma", "Takahashi", 35 という 3つの要素をもつkazuma_infoというリストを定義してください
@@ -62,12 +63,12 @@ users_info = [["Kazuma", 35],
 # A-9: 辞書
 # 下記のコードが期待通り動作するような辞書を定義してください
 
-def kazuma_info(fist_name, family_name, age):
-    kazuma_info = ["Kazuma", "Takahashi", 35]
-
-
-print(kazuma_info["first_name"])  # "Kazuma"
-print(kazuma_info["family_name""]) # "
-Takahashi
-"
-print(kazuma_info["age"])  # 35
+# def kazuma_info(fist_name, family_name, age):
+#     kazuma_info = ["Kazuma", "Takahashi", 35]
+#
+#
+# print(kazuma_info["first_name"])  # "Kazuma"
+# print(kazuma_info["family_name""]) # "
+# Takahashi
+# "
+# print(kazuma_info["age"])  # 35
