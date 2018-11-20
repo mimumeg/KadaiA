@@ -8,7 +8,7 @@ users = ["Bob", "Tom", "Ken"]
 # 1から5までの整数を要素として持つint_numbersリストを定義してください
 # int_numbers = [1, 2, 3, 4, 5]
 int_number = list(range(1, 6))
-print(int_number)
+# print(int_number)
 
 # A-3: 要素のデータ型が異なるリスト
 # "Kazuma", "Takahashi", 35 という 3つの要素をもつkazuma_infoというリストを定義してください
@@ -51,13 +51,15 @@ print()
 # "Name: Tom, Age: 57"
 # "Name: Bob, Age: 77"
 
-def info_print(name, age):
-    print(f"Name: {name}, Age: {age}")
-
-
 users_info = [["Kazuma", 35],
               ["Tom", 57],
               ["Bob", 77]]
+
+users_element = 0
+
+for users_name in users_info:
+    print(f"Name: {users_info[users_element][0]}, Age: {users_info[users_element][1]}")
+    users_element += 1
 
 
 # A-9: 辞書
